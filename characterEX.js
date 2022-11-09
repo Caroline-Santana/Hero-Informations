@@ -1,15 +1,26 @@
 'use strict'
 
 //Retornando todas as informações do personagem
-const getInfo = async(id) => {
-    const url = `https://akabab.github.io/superhero-api/api/id/${id}.json`
-    const response = await fetch(url);
-    const listaPersonagem = await response.json();
+const getCharacter = async(id) =>  {
+    const url = `https://akabab.github.io/superhero-api/api//id/${id}.json`
+    const response = await fetch (url)
+    const infoCharacter = await response.json()
 
-    return listaPersonagem;
+    return infoCharacter
 }
-console.log(getInfo('3'))
+
+
+//Retornando a biografia do personagem
+const getInfo = async(id) => {
+    const url = `https://akabab.github.io/superhero-api/api/biography/${id}.json`
+    const response = await fetch(url);
+    const biography = await response.json();
+
+    return biography;
+}
+
 export {
-    getInfo
+    getInfo,
+    getCharacter
 }
 

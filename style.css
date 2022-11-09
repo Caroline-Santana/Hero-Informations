@@ -23,6 +23,7 @@ header{
 main{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .linha-vertical {
     align-items: center;
@@ -34,8 +35,8 @@ main{
 .content-hero{
     display: flex;
     flex-direction: column;
-    margin-left: 350px;
     align-items: center;
+    justify-content: center;
     height: 800px;
     width: 700px;
   
@@ -52,7 +53,6 @@ main{
     margin: 50px;
     justify-content: center;
     width: 550px;
-    
     height: 600px;
 
 }
@@ -63,7 +63,7 @@ main{
     font-size: 45px;
     margin: 10px;
 }
-.information-hero span {
+.atributes-character {
     color:#fff;
     font-size: 30px;
     padding: 35px;
